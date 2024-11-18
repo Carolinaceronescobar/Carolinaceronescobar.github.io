@@ -69,13 +69,6 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
-/* Media Query */
-@media (max-width: 768px) {
-    .portada img {
-        height: 200px;
-    }
-}
-
 /* Secciones */
 section {
     padding: 4rem 2rem;
