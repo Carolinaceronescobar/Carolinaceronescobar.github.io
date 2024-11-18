@@ -66,7 +66,6 @@ nav ul li a:hover {
 .portada img {
     width: 100%; /* Asegura que la imagen ocupe todo el ancho */
     height: auto; /* Mantiene las proporciones originales */
-    object-fit: cover; /* Recorta la imagen si es necesario */
     display: block; /* Evita márgenes adicionales por defecto */
 }
 
