@@ -42,7 +42,8 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 5px 10px;
     font-weight: bold;
     transition: background 0.3s, color 0.3s;
@@ -57,13 +58,15 @@ nav ul li a:hover {
 /* Portada */
 .portada {
     width: 100%;
-    overflow: hidden; /* Esconde cualquier desbordamiento no deseado */
+    overflow: hidden;
+    max-height: 400px
 }
 
 .portada img {
     width: 100%;
-    height: auto; /* Mantiene las proporciones originales */
-    display: block; /* Evita márgenes adicionales por defecto */
+    height: auto; 
+    object-fit: cover; 
+    
 }
 
 /* Media Query */
@@ -81,8 +84,8 @@ section {
     margin: 2rem 0;
     border-radius: 20px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    opacity: 0; /* Inicialmente oculto para animaciones */
-    transition: all 0.8s ease-in-out;
+    opacity: 1; /* Inicialmente oculto para animaciones */
+    transform: translateY(0);
 }
 
 /* Mostrar sección con clase "show" */
