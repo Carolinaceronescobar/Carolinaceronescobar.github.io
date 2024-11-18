@@ -56,6 +56,26 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+.portada {
+    width: 100%; /* Ocupa todo el ancho de la página */
+    height: auto; /* Ajusta automáticamente la altura según el contenido */
+    position: relative; /* Permite agregar contenido superpuesto */
+    overflow: hidden; /* Esconde cualquier desbordamiento no deseado */
+}
+
+.portada img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    height: auto; /* Mantiene las proporciones originales */
+    object-fit: cover; /* Recorta la imagen si es necesario */
+    display: block; /* Evita márgenes adicionales por defecto */
+}
+
+@media (max-width: 768px) {
+    .portada img {
+        height: 200px; /* Ajusta una altura más pequeña para pantallas móviles */
+    }
+}
+
 /* Secciones */
 section {
     padding: 4rem 2rem;
