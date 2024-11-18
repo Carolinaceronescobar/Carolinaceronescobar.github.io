@@ -1,1 +1,62 @@
-<h1> Hola Mundo!! </h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#github">Trabajos en GitHub</a></li>
+                <li><a href="#disenos">Diseños en Redes Sociales</a></li>
+                <li><a href="#acerca">Acerca de mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="github">
+        <h2>Trabajos en GitHub</h2>
+        <ul>
+            <li><a href="https://github.com/usuario/proyecto1">Proyecto 1</a></li>
+            <li><a href="https://github.com/usuario/proyecto2">Proyecto 2</a></li>
+            <li><a href="https://github.com/usuario/proyecto3">Proyecto 3</a></li>
+        </ul>
+    </section>
+
+    <section id="disenos">
+        <h2>Diseños en Redes Sociales</h2>
+        <div class="diseños">
+            <img src="diseño1.jpg" alt="Diseño 1">
+            <img src="diseño2.jpg" alt="Diseño 2">
+            <img src="diseño3.jpg" alt="Diseño 3">
+        </div>
+    </section>
+
+    <section id="acerca">
+        <h2>Acerca de mí</h2>
+        <p>Soy un apasionado desarrollador y diseñador gráfico, con experiencia en proyectos de código abierto y campañas creativas en redes sociales.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="formResponse"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
