@@ -1,27 +1,28 @@
 /* Estilo global */
 * {
     box-sizing: border-box;
-    margin: 0; /* Mueve el margen a nivel global para evitar problemas de margen en elementos */
-    padding: 0; /* Mueve el padding a nivel global */
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #8a57ea; /* Morado claro del logo */
+    background-color: #8a57ea;
     color: #2E2E2E;
-    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    overflow-x: hidden;
+    padding-top: 80px; /* Asegura espacio debajo del header fijo */
 }
 
 /* Header */
 header {
-    background: #6A5ACD; /* Color de fondo */
+    background: #6A5ACD;
     color: white;
     padding: 1.5rem 0;
     text-align: center;
-    position: fixed; /* Fijo en la parte superior */
+    position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000; /* Sobre otros elementos */
+    z-index: 1000;
 }
 
 header h1 {
@@ -50,8 +51,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #FFD1DC; /* Rosa claro del logo */
-    color: #6A5ACD; /* Morado oscuro */
+    background: #FFD1DC;
+    color: #6A5ACD;
     border-radius: 5px;
 }
 
@@ -59,20 +60,19 @@ nav ul li a:hover {
 .portada {
     width: 100%;
     overflow: hidden;
-    max-height: 400px
+    max-height: 400px;
 }
 
 .portada img {
     width: 100%;
-    height: auto; 
-    object-fit: cover; 
-    
+    height: auto;
+    object-fit: cover;
 }
 
 /* Media Query */
 @media (max-width: 768px) {
     .portada img {
-        height: 200px; /* Ajusta una altura más pequeña para pantallas móviles */
+        height: 200px;
     }
 }
 
@@ -81,16 +81,10 @@ section {
     padding: 4rem 2rem;
     text-align: center;
     background: white;
-    margin: 2rem 0;
+    margin: 2rem;
     border-radius: 20px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    opacity: 1; /* Inicialmente oculto para animaciones */
-    transform: translateY(0);
-}
-
-/* Mostrar sección con clase "show" */
-section.show {
-    opacity: 1; /* Muestra cuando se agrega la clase */
+    opacity: 1;
 }
 
 /* Botones */
@@ -121,18 +115,18 @@ h2 {
 .diseños {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Permite que las imágenes envuelvan si no hay espacio suficiente */
+    flex-wrap: wrap;
 }
 
 .diseños img {
-    width: 30%; /* Ajusta el tamaño de las imágenes */
+    width: 30%;
     margin: 10px;
     border-radius: 8px;
-    transition: transform 0.3s; /* Efecto de hover */
+    transition: transform 0.3s;
 }
 
 .diseños img:hover {
-    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+    transform: scale(1.1);
 }
 
 /* Formularios */
@@ -147,9 +141,9 @@ form {
 
 form input,
 form textarea {
-    width: 100%; /* Ocupa todo el ancho */
-    padding: 15px; /* Aumenta el padding */
-    margin: 10px 0; 
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
@@ -158,7 +152,7 @@ form textarea {
 form button {
     width: 100%;
     padding: 15px;
-    background: #8a57ea; /* Color del botón */
+    background: #8a57ea;
     color: white;
     border: none;
     border-radius: 5px;
@@ -166,12 +160,12 @@ form button {
 }
 
 form button:hover {
-    background: #6A5ACD; /* Morado oscuro */
+    background: #6A5ACD;
 }
 
 /* Footer */
 footer {
-    background-color: #8a57ea; /* Color de fondo del pie de página */
+    background-color: #8a57ea;
     color: white;
     text-align: center;
     padding: 1rem;
