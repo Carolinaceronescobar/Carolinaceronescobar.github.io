@@ -1,15 +1,15 @@
 /* Estilo global */
 * {
     box-sizing: border-box;
+    margin: 0; /* Mueve el margen a nivel global para evitar problemas de margen en elementos */
+    padding: 0; /* Mueve el padding a nivel global */
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #8a57ea; /* Morado claro del logo */
     color: #2E2E2E;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 /* Header */
@@ -29,7 +29,6 @@ header h1 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 0;
 }
 
 /* Navegación */
@@ -39,7 +38,6 @@ nav ul {
     justify-content: center;
     gap: 1.5rem;
     padding: 0;
-    margin: 0;
 }
 
 nav ul li a {
@@ -47,6 +45,7 @@ nav ul li a {
     color: #fff;
     padding: 5px 10px;
     font-weight: bold;
+    transition: background 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
@@ -55,19 +54,19 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Portada */
 .portada {
-    width: 100%; /* Ocupa todo el ancho de la página */
-    height: auto; /* Ajusta automáticamente la altura según el contenido */
-    position: relative; /* Permite agregar contenido superpuesto */
+    width: 100%;
     overflow: hidden; /* Esconde cualquier desbordamiento no deseado */
 }
 
 .portada img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    width: 100%;
     height: auto; /* Mantiene las proporciones originales */
     display: block; /* Evita márgenes adicionales por defecto */
 }
 
+/* Media Query */
 @media (max-width: 768px) {
     .portada img {
         height: 200px; /* Ajusta una altura más pequeña para pantallas móviles */
@@ -82,14 +81,13 @@ section {
     margin: 2rem 0;
     border-radius: 20px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    transform: translateY(100px);
-    opacity: 0;
+    opacity: 0; /* Inicialmente oculto para animaciones */
     transition: all 0.8s ease-in-out;
 }
 
+/* Mostrar sección con clase "show" */
 section.show {
-    transform: translateY(0);
-    opacity: 1;
+    opacity: 1; /* Muestra cuando se agrega la clase */
 }
 
 /* Botones */
@@ -116,29 +114,22 @@ h2 {
     color: #222;
 }
 
-/* Listas */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 /* Galería de diseños */
 .diseños {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite que las imágenes envuelvan si no hay espacio suficiente */
 }
 
 .diseños img {
     width: 30%; /* Ajusta el tamaño de las imágenes */
     margin: 10px;
     border-radius: 8px;
-    transition: transform 0.3s;
+    transition: transform 0.3s; /* Efecto de hover */
 }
 
 .diseños img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
 }
 
 /* Formularios */
@@ -155,7 +146,7 @@ form input,
 form textarea {
     width: 100%; /* Ocupa todo el ancho */
     padding: 15px; /* Aumenta el padding */
-    margin: 10px 0;
+    margin: 10px 0; 
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
@@ -169,7 +160,6 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
 }
 
 form button:hover {
@@ -178,11 +168,10 @@ form button:hover {
 
 /* Footer */
 footer {
-    background-color: #8a57ea;
+    background-color: #8a57ea; /* Color de fondo del pie de página */
     color: white;
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
     margin-top: 2rem;
 }
-
