@@ -73,6 +73,27 @@ nav ul li a:hover {
     object-fit: cover; /* Mantiene las proporciones de la imagen mientras la ajusta */
 }
 
+/* Estilo para la sección de proyectos */
+.proyectos {
+    display: flex; /* Activar Flexbox */
+    flex-direction: column; /* Colocar los elementos en columna */
+    align-items: center; /* Centrar los elementos horizontalmente */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+/* Estilo para cada proyecto */
+.proyecto {
+    width: 100%; /* O ajuste según tu diseño */
+    max-width: 400px; /* Limitar el ancho máximo del proyecto */
+    text-align: center; /* Centrar el texto debajo de la imagen */
+}
+
+/* Si deseas limitar el ancho de las imágenes o hacer que se ajusten */
+.proyecto img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de su contenedor */
+    height: auto; /* Mantener proporciones */
+    border-radius: 8px; /* Opcional: Bordes redondeados */
+}
 /* Secciones */
 section {
     padding: 4rem 2rem;
