@@ -78,22 +78,29 @@ nav ul li a:hover {
     display: flex; /* Activar Flexbox */
     flex-direction: column; /* Colocar los elementos en columna */
     align-items: center; /* Centrar los elementos horizontalmente */
-    gap: 20px; /* Espacio entre las columnas */
+    gap: 20px; /* Espacio entre los proyectos */
 }
 
 /* Estilo para cada proyecto */
 .proyecto {
-    width: 100%; /* O ajuste según tu diseño */
-    max-width: 400px; /* Limitar el ancho máximo del proyecto */
+    width: 100%; /* Asegura que el ancho sea consistente */
+    max-width: 350px; /* Limita el ancho máximo */
     text-align: center; /* Centrar el texto debajo de la imagen */
 }
 
-/* Si deseas limitar el ancho de las imágenes o hacer que se ajusten */
+/* Estilo para las imágenes de los proyectos */
 .proyecto img {
     width: 100%; /* Asegura que la imagen ocupe todo el ancho de su contenedor */
-    height: auto; /* Mantener proporciones */
-    border-radius: 8px; /* Opcional: Bordes redondeados */
+    height: auto; /* Mantiene proporciones */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
 }
+
+/* Para el texto de los proyectos */
+.proyecto p {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    font-size: 1.2rem; /* Tamaño de fuente para mayor legibilidad */
+}
+
 /* Secciones */
 section {
     padding: 4rem 2rem;
